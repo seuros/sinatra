@@ -1286,7 +1286,7 @@ get '/foo' do
   request.get?              # true (其他动词也具有类似方法)
   request.form_data?        # false
   request["SOME_HEADER"]    # SOME_HEADER header的值
-  request.referrer          # 客户端的referrer 或者 '/'
+  request.referer           # 客户端的referrer 或者 '/'
   request.user_agent        # user agent (被 :agent 条件使用)
   request.cookies           # 浏览器 cookies 哈希
   request.xhr?              # 这是否是ajax请求？

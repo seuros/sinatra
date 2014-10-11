@@ -1830,7 +1830,7 @@ get '/foo' do
   request.get?                # true (다른 동사에 대해 유사한 메서드 있음)
   request.form_data?          # false
   request["SOME_HEADER"]      # SOME_HEADER 헤더의 값
-  request.referrer            # 클라이언트의 리퍼러 또는 '/'
+  request.referer             # 클라이언트의 리퍼러 또는 '/'
   request.user_agent          # 사용자 에이전트 (:agent 조건에서 사용됨)
   request.cookies             # 브라우저 쿠키의 해시
   request.xhr?                # 이게 ajax 요청인가요?

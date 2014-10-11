@@ -1734,7 +1734,7 @@ get '/foo' do
   request.get?                # true (есть аналоги для других методов HTTP)
   request.form_data?          # false
   request["some_param"]       # значение параметра some_param. Шорткат для хеша params
-  request.referrer            # источник запроса клиента либо '/'
+  request.referer             # источник запроса клиента либо '/'
   request.user_agent          # user agent (используется для :agent условия)
   request.cookies             # хеш, содержащий cookies браузера
   request.xhr?                # является ли запрос ajax запросом?

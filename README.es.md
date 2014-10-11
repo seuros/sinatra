@@ -1645,7 +1645,7 @@ get '/foo' do
   request.get?                # true (hay métodos análogos para los otros verbos)
   request.form_data?          # false
   request["UNA_CABECERA"]     # valor de la cabecera UNA_CABECERA
-  request.referrer            # la referencia del cliente o '/'
+  request.referer             # la referencia del cliente o '/'
   request.user_agent          # user agent (usado por la condición :agent)
   request.cookies             # hash de las cookies del navegador
   request.xhr?                # es una petición ajax?

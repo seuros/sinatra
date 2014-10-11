@@ -1721,7 +1721,7 @@ get '/foo' do
   request.get?                # true (他の動詞にも同種メソッドあり)
   request.form_data?          # false
   request["some_param"]       # some_param変数の値。[]はパラメータハッシュのショートカット
-  request.referrer            # クライアントのリファラまたは'/'
+  request.referer             # クライアントのリファラまたは'/'
   request.user_agent          # ユーザエージェント (:agent 条件によって使用される)
   request.cookies             # ブラウザクッキーのハッシュ
   request.xhr?                # Ajaxリクエストかどうか

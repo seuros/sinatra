@@ -1875,7 +1875,7 @@ get '/foo' do
   request.get?                # true (ähnliche Methoden für andere Verben)
   request.form_data?          # false
   request["irgendein_param"]  # Wert von einem Parameter; [] ist die Kurzform für den params Hash
-  request.referrer            # Der Referrer des Clients oder '/'
+  request.referer             # Der Referrer des Clients oder '/'
   request.user_agent          # User-Agent (verwendet in der :agent Bedingung)
   request.cookies             # Hash des Browser-Cookies
   request.xhr?                # Ist das hier ein Ajax-Request?

@@ -1863,7 +1863,7 @@ get '/foo' do
   request.get?                # true (similar methods for other verbs)
   request.form_data?          # false
   request["some_param"]       # value of some_param parameter. [] is a shortcut to the params hash.
-  request.referrer            # the referrer of the client or '/'
+  request.referer             # the referrer of the client or '/'
   request.user_agent          # user agent (used by :agent condition)
   request.cookies             # hash of browser cookies
   request.xhr?                # is this an ajax request?

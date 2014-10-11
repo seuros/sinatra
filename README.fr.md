@@ -1863,7 +1863,7 @@ get '/foo' do
                               # verbes HTTP)
   request.form_data?          # false
   request["UN_ENTETE"]        # valeur de l'entête UN_ENTETE
-  request.referrer            # référant du client ou '/'
+  request.referer             # référant du client ou '/'
   request.user_agent          # user agent (utilisé par la condition :agent)
   request.cookies             # tableau contenant les cookies du navigateur
   request.xhr?                # requête AJAX ?
